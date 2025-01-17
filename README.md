@@ -28,10 +28,15 @@ This is a real-time chat application built using Django and Django Channels. It 
 5.Create a virtual Environment:
     ```
     pip install virtualenv
-    virtualenv venv
-    python -m venv venv
+      ```
+   ```
+      virtualenv venv
+   ```
+   ```
+      python -m venv venv
+   ```
     venv\Scripts\activate
-    ```
+
 4. Run the migrations:
    ```
    python manage.py migrate
