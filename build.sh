@@ -1,8 +1,15 @@
+#!/usr/bin/env bash
+# exit on error
 set -o errexit
+
+# Install python dependencies
 pip install -r requirements.txt
-python manage.py collectstatic --noinput
+
+# Move to the Django project directory
+cd DjangoChat-main
+
+# Collect static files
+python manage.py collectstatic --no-input
+
+# Run migrations
 python manage.py migrate
-if [[$CREATE_SUPERUSER]];
-then
-    python manage.py createsuperuser --noinput --email $DJANGO_SUPERUSER_EMAIL
-fi
