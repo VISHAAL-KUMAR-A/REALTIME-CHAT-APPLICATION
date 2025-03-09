@@ -75,7 +75,7 @@ TEMPLATES = [
 ]
 
 ASGI_APPLICATION = 'chatapp.routing.application'
-WSGI_APPLICATION = 'chatapp.wsgi.application'
+WSGI_APPLICATION = 'DjangoChat-main.chatapp.wsgi.application'
 
 
 # Database
